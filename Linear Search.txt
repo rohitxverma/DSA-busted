@@ -1,0 +1,26 @@
+LINEAR SEARCH
+//Linear Search
+#include <iostream>
+using namespace std;
+bool linearSearch(int arr[],int key,int size){
+    for(int i=0;i<size;i++){
+    if(arr[i]==key){
+        return 1;
+      }
+    }
+    return 0;
+}
+int main() {
+    int key;
+    cout<<"Enter the Element you want to Search"<<endl;
+    cin>>key;
+    int arr[10]={1,2,3,4,5,6,7,8,9,10};
+    bool found = linearSearch(arr,key,10);
+    if(found){
+        cout<<"Key is present";
+    }else{
+        cout<<"Key is absent";
+     }
+    return 0;
+}
+
